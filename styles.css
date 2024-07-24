@@ -1,82 +1,110 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navbar container */
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-subtitle {
+    font-size: 24px;
+    color: #f1c40f;
+    background-color: #121212;
+    padding: 10px;
+}
+
+.button {
+    background-color: #f1c40f;
+    color: #121212;
     padding: 10px 20px;
-}
-
-/* Background image section */
-.background-image-section {
-    background: url('/path/to/your/background/image.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-}
-
-/* Logo */
-.navbar img {
-    height: 80px;
-}
-
-/* Navbar links */
-.navbar-nav {
-    list-style: none;
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-}
-
-.nav-item {
-    padding: 10px 15px;
-}
-
-.nav-link {
-    color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
-.nav-link:hover {
-    color: #ddd;
+.countdown {
+    margin-top: 30px;
+    font-size: 1.5em;
 }
 
-/* Navbar collapse for small screens */
-.navbar-collapse {
+.countdown-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: #f1c40f;
+    color: #121212;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.countdown-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.countdown-timer {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.time-box {
+    background-color: #333;
+    padding: 10px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 5px;
+}
 
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-    }
+.time {
+    font-size: 2em;
+    display: block;
+}
 
-    .nav-item {
-        width: 100%;
-        text-align: center;
-    }
+.label {
+    font-size: 1em;
+    color: #f1c40f;
+}
 
-    .navbar-collapse {
-        justify-content: center;
-    }
+.nft-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nft-images img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
 }
