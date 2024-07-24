@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -16,9 +15,8 @@ body {
     background-color: #333;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
 }
 
 .menu-icon {
@@ -26,9 +24,56 @@ body {
     cursor: pointer;
 }
 
-.header-content {
+/* Estilos del menú */
+.menu {
+    display: none; /* Oculta el menú por defecto */
+    background-color: #000; /* Fondo negro */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto visual */
+}
+
+.menu.show {
+    display: block; /* Muestra el menú cuando tiene la clase 'show' */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 15px;
     text-align: center;
+}
+
+.menu ul li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #575757; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos del contenido del encabezado */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
     padding: 50px 20px;
+    flex-wrap: wrap; /* Asegura que los elementos se acomoden en pantallas más pequeñas */
+}
+
+.header-text {
+    flex: 1;
+    max-width: 500px; /* Limita el ancho máximo del texto */
 }
 
 .header-title {
@@ -53,18 +98,29 @@ body {
     display: inline-block;
 }
 
+.header-image {
+    flex: 1;
+    max-width: 500px; /* Limita el ancho máximo de la imagen */
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Elimina el espacio debajo de la imagen */
+}
+
 .countdown {
     margin-top: 30px;
     font-size: 1.5em;
+    background-color: #f1c40f; /* Fondo amarillo */
+    color: #121212; /* Texto negro */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .countdown-title {
     font-size: 2em;
     margin-bottom: 10px;
-    background-color: #f1c40f;
-    color: #121212;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 .countdown-text {
@@ -89,22 +145,10 @@ body {
 .time {
     font-size: 2em;
     display: block;
+    color: #f1c40f; /* Texto amarillo */
 }
 
 .label {
     font-size: 1em;
     color: #f1c40f;
-}
-
-.nft-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.nft-images img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 10px;
 }
